@@ -14,6 +14,7 @@ import java.util.Set;
 
 public class Select {
     public static void main(String[] args) {
+        //redis zrangeByLex 可以进行模糊查询， 最好是范围查询等
         Jedis j = new Jedis("140.143.230.219", 6379);
         final String USER_AGE_28 = "USER_AGE_28";
         final String USER_DXN = "USER_DXN3";
